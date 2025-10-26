@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    body {
+        @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen;
+    }
+}
+
+@layer components {
+    .glass {
+        @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+    }
+
+    .glass-dark {
+        @apply bg-black/20 backdrop-blur-md border border-white/10 shadow-xl;
+    }
+
+    .btn-primary {
+        @apply bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl;
+    }
+
+    .btn-secondary {
+        @apply glass text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 transform hover:scale-105 active:scale-95 hover:bg-white/20;
+    }
+
+    .input-glass {
+        @apply glass text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent;
+    }
+
+    .card-glass {
+        @apply glass rounded-2xl p-6 shadow-2xl;
+    }
+
+    .dice-result {
+        @apply bg-gradient-to-br from-purple-400 to-blue-400 text-white font-bold text-lg w-12 h-12 rounded-lg flex items-center justify-center shadow-lg;
+    }
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari and Opera */
+    }
+}
