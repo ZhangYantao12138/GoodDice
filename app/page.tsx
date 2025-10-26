@@ -13,10 +13,12 @@ export default function HomePage() {
     const router = useRouter()
 
     useEffect(() => {
-        // 从本地存储获取昵称
+        // 从本地存储获取昵称，如果没有则使用默认昵称
         const savedNickname = storage.get('nickname')
         if (savedNickname) {
             setNickname(savedNickname)
+        } else {
+            setNickname('Seal')
         }
     }, [])
 
