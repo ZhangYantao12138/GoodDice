@@ -1,8 +1,4 @@
-import { type ClassValue, clsx } from 'clsx'
-
-export function cn(...inputs: ClassValue[]) {
-    return clsx(inputs)
-}
+// 移除未使用的 clsx 依赖
 
 // 生成随机房间ID
 export function generateRoomId(): string {
