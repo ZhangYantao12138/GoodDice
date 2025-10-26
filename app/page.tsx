@@ -77,8 +77,8 @@ export default function HomePage() {
                             <div className="text-6xl">🦭</div>
                         </div>
                     </div>
-                    <h1 className="text-4xl font-bold text-white mb-2">海豹的跑团文具</h1>
-                    <p className="text-white/70 text-lg">SealTRPG - 在线骰子</p>
+                    <h1 className="text-4xl font-bold text-white mb-2">海豹骰子</h1>
+                    <p className="text-white/70 text-lg">海豹跑团文具集-多人在线骰子</p>
                 </div>
 
                 {/* 主卡片 */}
